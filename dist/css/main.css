@@ -1,0 +1,14 @@
+header {
+  min-height: 100vh;
+  background-color: lime;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+body {
+  background-color: #ebefe2; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px; }

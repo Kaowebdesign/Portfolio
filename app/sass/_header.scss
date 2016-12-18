@@ -1,0 +1,23 @@
+header{
+ 	min-height:100vh;
+ 	background-color: rgb(0,255,0);
+	background-image:url(../img/background.jpg);
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+ 	}
+ header section{
+ 	height: 90vh;
+ 	display: flex;
+ 	align-content:center;
+ 	
+ }
+ header article{
+	background-color: rgba(255,255,255,0.8);
+	height: 140px;
+	width:140px;
+	border-radius: 100px;
+	margin: auto;
+	background-image: url(../img/face.JPG);
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+ }
