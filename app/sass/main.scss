@@ -1,9 +1,19 @@
-@import "header";
-@import "body";
-@import "footer";
 @charset "utf-8";
 *{
 margin:0px;
 padding:0px;
 border:0px;
+box-sizing:border-box;
 }
+@font-face {
+   font-family: Roboto-medium; /* Гарнитура шрифта */
+   src: url(../fonts/Roboto-Medium.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+   font-family: Roboto-regular; /* Гарнитура шрифта */
+   src: url(../fonts/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+@import "import/header";
+@import "import/body";
+@import "import/footer";
+@import "import/media";

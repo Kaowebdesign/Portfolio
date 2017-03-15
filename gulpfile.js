@@ -11,7 +11,11 @@ var gulp=require('gulp'),
 	cache=require('gulp-cache'),
 	autoprefixer=require('gulp-autoprefixer'),
 	jade=require('gulp-jade'),
-	plumber=require('gulp-plumber');
+	plumber=require('gulp-plumber'),
+	svgSprite = require('gulp-svg-sprites'),
+	svgmin = require('gulp-svgmin'),
+	cheerio = require('gulp-cheerio'),
+	replace = require('gulp-replace');
 
 gulp.task('sass',function(){//Таск для пошуку sass файлів
 	return gulp.src('app/sass/**/*.scss')/*Обираємо всі файли з даним розширенням*/
@@ -21,7 +25,6 @@ gulp.task('sass',function(){//Таск для пошуку sass файлів
 	.pipe(gulp.dest('app/css'))/*Результат кладемо в папку css*/
 	.pipe(browserSync.reload({stream:true}))
 });
-
 
 gulp.task('jade',function () {
 	gulp.src('app/jade/**/*.jade')
@@ -40,6 +43,48 @@ gulp.task('browser-sync',function(){
 		notify:false
 	});
 });
+
+/*SVG-SPRITE START*/
+/*
+gulp.task('svgSpriteBuild', function () {
+	return gulp.src('app/img/svg/*.svg')
+	// minify svg
+		.pipe(svgmin({
+			js2svg: {
+				pretty: true
+			}
+		}))
+		// remove all fill, style and stroke declarations in out shapes
+		.pipe(cheerio({
+			run: function ($) {
+				$('[fill]').removeAttr('fill');
+				$('[stroke]').removeAttr('stroke');
+				$('[style]').removeAttr('style');
+			},
+			parserOptions: {xmlMode: true}
+		}))
+		// cheerio plugin create unnecessary string '&gt;', so replace it.
+		.pipe(replace('&gt;', '>'))
+		// build svg sprite
+		.pipe(svgSprite({
+			mode: {
+				symbol: {
+					sprite: "../sprite.svg",
+					render: {
+						scss: {
+							dest:'../../../sass/_sprite.scss',
+							template: assetsDir + "sass/templates/_sprite_template.scss"
+						}
+					}
+				}
+			}
+		}))
+		.pipe(gulp.dest('app/img/sprites'));
+});
+
+gulp.task('svgSprite', ['svgSpriteBuild', 'svgSpriteSass']);
+*/
+/*SVG-SPRITE END*/
 
 gulp.task('scripts',function(){
 	return gulp.src([

@@ -1,0 +1,69 @@
+$BasicMainFon:rgb(235,235,235);
+$BasicBlack:rgba(0,0,0,0.8);
+body{
+	background-color: rgb(235,239,226);
+ 	}
+
+main{
+	position: relative;
+	width: 100vw;
+	z-index: 80;
+
+	.main-content__about{
+		background-color:$BasicMainFon;
+		height: 100vh;
+		width: 100%;
+		
+		.main-content__caption{
+			position: absolute;
+			top:0px;
+			width: 100%;
+			margin: 0px;
+
+			p{
+				display: block;
+				width: 56.8vw;
+				height: 10vh;
+				margin: 0 auto;
+				font-family: Roboto-medium;
+				font-size:2.5em;
+				color: $BasicBlack;
+				text-transform:uppercase;
+			}
+
+			.main-content__underline{
+				display: block;
+				margin: 0 auto;
+				width:20vw;
+				height: 1vh;
+				background-color: $BasicBlack;
+			}
+		}
+
+		.main-content__text{
+			display: block;
+			width: 100%;
+			height: 80vh;
+			text-align: center;
+			background-image:url(../img/about_me.jpg);
+			background-repeat:no-repeat;
+			background-size: cover;
+			background-position: top;
+		}
+
+	}
+
+	.main-content__about::before{
+		content: " ";  
+		display: block;
+		position:relative;
+		top:-7.9vh;
+		width: 100vw;
+		height:8vh;
+		background-image:url(../img/svg/arrow.svg);
+		background-repeat:no-repeat;
+		background-size: cover;
+		background-position: top;
+	}
+}
+
