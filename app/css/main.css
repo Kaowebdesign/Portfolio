@@ -18,6 +18,12 @@
   src: url(../fonts/Roboto-Regular.ttf);
   /* Путь к файлу со шрифтом */ }
 
+@font-face {
+  font-family: Roboto-Light;
+  /* Гарнитура шрифта */
+  src: url(../fonts/Roboto-Light.ttf);
+  /* Путь к файлу со шрифтом */ }
+
 header {
   height: 100vh;
   width: 100vw;
@@ -57,6 +63,7 @@ header {
         header section nav .menu-items .menu-items__item {
           display: inline-block;
           width: 12vw;
+          max-width: 12vw;
           height: 7vh; }
           header section nav .menu-items .menu-items__item .menu-items__link {
             display: block;
@@ -94,34 +101,18 @@ header {
         color: rgba(255, 255, 255, 0.75); }
     header section .little-arrow {
       position: absolute;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
       margin: 0px;
-      bottom: 3vh;
+      bottom: 5vh;
       width: 100%;
-      height: 10vh; }
+      height: 10vh;
+      text-align: center; }
       header section .little-arrow .little-arrow__down {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
         text-decoration: none;
-        bottom: 1vh;
-        width: 13vw;
-        height: 8vh; }
+        bottom: 5vh;
+        width: 13vw; }
         header section .little-arrow .little-arrow__down i {
           font-size: 36px;
-          color: rgba(255, 255, 255, 0.85); }
+          color: rgba(255, 255, 255, 0.75); }
   header .menu-bars {
     position: fixed;
     top: 4px;
@@ -132,7 +123,7 @@ header {
     z-index: 100; }
     header .menu-bars .menu-bars__item {
       position: absolute;
-      right: 10px;
+      right: 2vw;
       display: block;
       width: 12vw;
       height: 100%; }
@@ -175,23 +166,20 @@ main {
       position: absolute;
       top: 0px;
       width: 100%;
-      margin: 0px; }
+      margin: 0px;
+      text-align: center; }
       main .main-content__about .main-content__caption p {
-        display: block;
-        width: 56.8vw;
-        height: 10vh;
-        margin: 0 auto;
         font-family: Roboto-medium;
         font-size: 2.5em;
-        color: rgba(0, 0, 0, 0.8);
-        text-transform: uppercase; }
+        color: rgba(0, 0, 0, 0.8); }
       main .main-content__about .main-content__caption .main-content__underline {
         display: block;
         margin: 0 auto;
         width: 20vw;
-        height: 1vh;
+        height: 0.63vh;
         background-color: rgba(0, 0, 0, 0.8); }
     main .main-content__about .main-content__text {
+      margin-top: 5vh;
       display: block;
       width: 100%;
       height: 80vh;
@@ -204,13 +192,39 @@ main {
     content: " ";
     display: block;
     position: relative;
-    top: -7.9vh;
-    width: 100vw;
+    top: -7.85vh;
+    width: 100%;
     height: 8vh;
     background-image: url(../img/svg/arrow.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top; }
+    background-size: 102%;
+    background-position: bottom; }
+  main .main-content__who {
+    background-color: #ebebeb;
+    height: 100vh;
+    width: 100%; }
+    main .main-content__who .main-content__who-caption {
+      width: 100%;
+      text-align: center; }
+      main .main-content__who .main-content__who-caption p {
+        font-family: Roboto-medium;
+        font-size: 1.8em;
+        color: rgba(0, 0, 0, 0.8); }
+      main .main-content__who .main-content__who-caption .main-content__underline {
+        display: block;
+        margin: 0 auto;
+        width: 20vw;
+        height: 0.6vh;
+        background-color: rgba(0, 0, 0, 0.8); }
+    main .main-content__who .main-content__who-text {
+      width: 100%;
+      height: 60%;
+      margin-top: 10px;
+      padding: 10px; }
+      main .main-content__who .main-content__who-text p {
+        font-size: 1em;
+        font-family: Roboto-Light;
+        color: rgba(0, 0, 0, 0.7); }
 
 @media only screen and (min-width: 480px) {
   header {

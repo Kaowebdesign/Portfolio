@@ -13,6 +13,10 @@ box-sizing:border-box;
    font-family: Roboto-regular; /* Гарнитура шрифта */
    src: url(../fonts/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
 }
+@font-face {
+   font-family: Roboto-Light; /* Гарнитура шрифта */
+   src: url(../fonts/Roboto-Light.ttf); /* Путь к файлу со шрифтом */
+}
 @import "import/header";
 @import "import/body";
 @import "import/footer";
