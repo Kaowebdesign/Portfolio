@@ -61,23 +61,20 @@ header {
       header section nav .menu-items {
         list-style-type: none; }
         header section nav .menu-items .menu-items__item {
-          display: inline-block;
-          width: 12vw;
-          max-width: 12vw;
-          height: 7vh; }
+          display: inline-block; }
           header section nav .menu-items .menu-items__item .menu-items__link {
             display: block;
             width: 100%;
             height: 100%; }
             header section nav .menu-items .menu-items__item .menu-items__link i {
-              font-size: 36px;
+              font-size: 32px;
               text-decoration: none;
               color: rgba(255, 255, 255, 0.85); }
         header section nav .menu-items .menu-items__item:nth-child(1) {
-          margin-left: 5px; }
+          padding-left: 5px; }
         header section nav .menu-items .menu-items__item:nth-child(2) {
-          margin-left: 5px;
-          width: 8vw; }
+          padding-left: 5px;
+          padding-right: 5px; }
     header section article {
       height: 140px;
       width: 140px;
@@ -117,18 +114,15 @@ header {
     position: fixed;
     top: 4px;
     right: 4px;
-    width: 20vw;
-    height: 7vh;
-    margin: 0px;
+    padding-right: 10px;
     z-index: 100; }
     header .menu-bars .menu-bars__item {
-      position: absolute;
-      right: 2vw;
       display: block;
-      width: 12vw;
-      height: 100%; }
+      width: 100%;
+      height: 100%;
+      text-align: center; }
       header .menu-bars .menu-bars__item i {
-        font-size: 36px;
+        font-size: 34px;
         color: white; }
   header .menu-table {
     position: absolute;

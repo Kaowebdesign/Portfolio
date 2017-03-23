@@ -63,6 +63,7 @@ header {
         header section nav .menu-items .menu-items__item {
           display: inline-block;
           width: 12vw;
+          max-width: 12vw;
           height: 7vh; }
           header section nav .menu-items .menu-items__item .menu-items__link {
             display: block;
@@ -122,7 +123,7 @@ header {
     z-index: 100; }
     header .menu-bars .menu-bars__item {
       position: absolute;
-      right: 10px;
+      right: 2vw;
       display: block;
       width: 12vw;
       height: 100%; }
