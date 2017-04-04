@@ -1,57 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru-RU">
   <head>
-    <title>my site</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>KAO Web Design</title>
     <link rel="stylesheet" type="text/css" href="css/libs.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link href="img/fav_forest.png" rel="shortcut icon" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="by Andrey Karnaukh">
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
   </head>
-  <body> </body>
-  <header>
-    <section>
-      <nav>
-        <ul class="menu-items">
-          <li class="menu-items__item"><a href="#vk" class="menu-items__link"><i aria-hidden="true" class="fa fa-vk"></i></a></li>
-          <li class="menu-items__item"><a href="#facebook" class="menu-items__link"><i aria-hidden="true" class="fa fa-facebook"></i></a></li>
-          <li class="menu-items__item"><a href="#github" class="menu-items__link"><i aria-hidden="true" class="fa fa-github"></i></a></li>
+  <body> 
+    <header class="header">
+      <section class="loaderArea">
+        <div class="loader"></div>
+      </section>
+      <section class="header__content">
+        <nav class="menu">
+          <ul class="menu__items">
+            <li class="menu__item"><a class="menu__link" href="https://vk.com/a.karnauh" target="_blank"><i class="fa fa-vk"></i></a></li>
+            <li class="menu__item"><a class="menu__link" href="https://www.facebook.com/starflesh" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li class="menu__item"><a class="menu__link" href="https://github.com/starflesh" target="_blank"><i class="fa fa-github"></i></a></li>
+          </ul>
+        </nav>
+        <article class="header__photo"><img class="header_photo-me" src="../img/face.JPG" alt="Карнаух Андрей"></article>
+        <div class="header__title-photo">
+          <h1>Андрей Карнаух</h1>
+          <p>Личный сайт веб разработчика</p>
+        </div>
+      </section>
+      <div class="little-arrow"><a class="little-arrow__down" href="#about"><i class="fa fa-chevron-down go_to"></i></a></div>
+      <div class="menu-bars"><a class="menu-bars__items" href="#menu" id="menu-bars"><i class="fa fa-bars" id="fa-menu"></i></a></div>
+      <div id="menus">
+        <ul class="menu-table__items">
+          <li class="menu-table__item"><a class="menu-table__link" href="#" target="_blank" id="jobs">Мои работы</a></li>
+          <li class="menu-table__item"><a class="menu-table__link" href="#about" id="about-me">Обо мне</a></li>
         </ul>
-      </nav>
-      <article></article>
-      <div>
-        <p>Андрей Карнаух</p>
-        <p>Личный сайт веб разработчика</p>
       </div>
-      <div class="little-arrow"><a href="#about" class="little-arrow__down"><i class="fa fa-chevron-down"></i></a></div>
-    </section>
-    <div class="menu-bars"><a href="#menu" class="menu-bars__item"><i aria-hidden="true" class="fa fa-bars"></i></a></div>
-    <div class="menu-table">
-      <ul class="menu-table__items">
-        <li class="menu-table__item"><a class="menu-table__link">
-            <p>Item1</p></a></li>
-        <li class="menu-table__item"><a class="menu-table__link">
-            <p>Item2</p></a></li>
-        <li class="menu-table__item"><a class="menu-table__link">
-            <p>Item3</p></a></li>
-      </ul>
-    </div>
-  </header>
-  <main class="main-content">
-    <section id="about" class="main-content__about">
-      <div class="main-content__caption">
-        <p>Обо мне</p><span class="main-content__underline"></span>
-      </div>
-      <article class="main-content__text"></article>
-    </section>
-    <section id="who" class="main-content__who">
-      <div class="main-content__who-caption">
-        <p>Кто я</p><span class="main-content__underline"></span>
-      </div>
-      <article class="main-content__who-text">
-        <p>Я веб-верстальщик из Днепропетровска. Мне 20 лет. Я занимаюсь разработкой современных сайтов. Мне нравится делать интересные и современные проекты.</p>
-      </article>
-    </section>
-  </main>
+    </header>
+    <main class="main">
+      <section class="about" id="about">
+        <div class="about__caption">
+          <h2 class="about__text">Обо мне</h2>
+        </div>
+        <article class="about__image"><img class="about__image-me" src="../img/about.jpg" alt="Карнаух Андрей"></article>
+        <article class="who">
+          <div class="who__caption">
+            <h2 class="who__text">Кто я</h2>
+          </div>
+          <div class="who__text-about-me">
+            <p class="who__information">Я веб верстальщик из Днепра. Занимаюсь front-end разработкой последние несколько лет. Мне нравится делать современные и интересные проекты.</p><br>
+            <p class="who__information">Для верстки своего portfolio я использовал все современные технологии веб-разработки. Это и работа с системой контроля версий git, с пакетным менеджером npm, со сборщиком проектов gulp. А также я использовал препроцессоры pug(jade) и sass и несколько jquery плагинов.</p><br>
+            <p class="who__information"> Сейчас, я студент Национального горного университета, изучающий компьютерные науки и информационные технологии.</p>
+          </div>
+        </article>
+      </section>
+      <section class="skils" id="skils">
+        <div class="skils__caption">
+          <h2 class="skils__text-caption">Чем я могу быть <br> вам полезен</h2>
+        </div>
+        <article class="skils__text">
+          <p class="skils__information"> Больше всего меня привлекает frontend разработка, но я так же знаком и могу решать не сложные задачи на  Backend. Но давайте все по порядку.</p>
+        </article>
+        <h2 class="skils__all-caption">Frontend	</h2>
+        <div class="skils__frontend">
+          <div class="skils__item-frontend"></div>
+          <div class="skils__item-frontend"></div>
+          <div class="skils__item-frontend"></div>
+          <div class="skils__item-frontend"></div>
+        </div>
+        <h2 class="skils__all-caption">Backend	</h2>
+        <div class="skils__backend">
+          <div class="skils__item-backend"></div>
+          <div class="skils__item-backend"></div>
+        </div>
+        <h2 class="skils__all-caption">WorkFlow</h2>
+        <div class="skils__workflow">
+          <div class="skils__item-workflow"></div>
+          <div class="skils__item-workflow"></div>
+          <div class="skils__item-workflow"></div>
+          <div class="skils__item-workflow"></div>
+        </div>
+        <h2 class="skils__all-caption">Other</h2>
+        <div class="skils__other">
+          <div class="skils__item-other"></div>
+          <div class="skils__item-other"></div>
+        </div>
+      </section>
+      <section class="maps" id="maps">
+        <div class="map" id="map"></div>
+        <div class="contacts">
+          <h2 class="contacts__caption">Контакты</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item"> <i class="fa fa-skype"></i><span class="contacts__name"> Kao_dance</span></li>
+            <li class="contacts__item"> <i class="fa fa-envelope"> </i><span class="contacts__name">assdwqe@gmail.com</span></li>
+            <li class="contacts__item"> <i class="fa fa-phone"> </i><span class="contacts__name">+380(98)-86-61-190</span></li>
+            <li class="contacts__item"><i class="fa fa-map-marker"> </i><span class="contacts__name"> Днепр, пр.Гагарина 57</span></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="js/components/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwH4Vdoo_5AnmdMF3ljyXwN4JHlOha1jM&amp;callback=initMap" async defer></script>
+    <footer class="footer">
+      <section class="footer-content">
+        <div class="footer-content_menus">
+          <ul class="footer-content__menu-list">
+            <li class="footer-content__menu-item"><a class="footer-content__link" href="#jobs" target="_blank">Мои работы</a></li>
+            <li class="footer-content__menu-item"><a class="footer-content__link" href="#about">Обо мне</a></li>
+          </ul>
+          <article class="footer-content__socials">
+            <nav class="menu">
+              <ul class="menu__items">
+                <li class="menu__item"><a class="menu__link" href="https://vk.com/a.karnauh" target="_blank"><i class="fa fa-vk"></i></a></li>
+                <li class="menu__item"><a class="menu__link" href="https://www.facebook.com/starflesh" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li class="menu__item"><a class="menu__link" href="https://github.com/starflesh" target="_blank"><i class="fa fa-github"></i></a></li>
+              </ul>
+            </nav>
+          </article>
+        </div>
+        <article class="footer-content__text-down">
+          <blockquote class="footer-content__quote">
+            <p class="footer-content__text-quote">Любой дурак сможет написать код, который поймет машина. Хорошие программисты пишут код, который сможет понять человек.</p>
+          </blockquote>
+          <p class="footer-content__author">- Martin Fowler</p>
+        </article>
+      </section>
+      <section class="footer-center"></section>
+      <section class="footer-bottom">
+        <p class="footer-bottom__author">&copy Андрей Карнаух | 2017</p>
+      </section>
+    </footer>
+    <script src="js/components/menu.js"></script>
+    <script src="js/components/scrolling.js"></script>
+    <script src="js/components/scrollup.js"></script>
+    <script src="js/components/preloader.js"></script>
+  </body>
 </html>

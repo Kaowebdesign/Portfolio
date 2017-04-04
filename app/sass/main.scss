@@ -17,6 +17,7 @@ box-sizing:border-box;
    font-family: Roboto-Light; /* Гарнитура шрифта */
    src: url(../fonts/Roboto-Light.ttf); /* Путь к файлу со шрифтом */
 }
+@import "import/vars";
 @import "import/header";
 @import "import/body";
 @import "import/footer";

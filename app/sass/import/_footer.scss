@@ -1,0 +1,127 @@
+.footer{
+	position: relative;
+	width: 100%;
+	background-color:$BasicWhite;
+
+	.footer-content{
+		position: absolute;
+		top:-89px;
+		width: 100%;
+		height: 210px;
+		background-color:rgba(0,0,0,0.7);
+
+		.footer-content_menus{
+
+			.footer-content__menu-list{
+				display: block;
+				text-align: center;
+
+				.footer-content__menu-item{
+					display: inline-block;
+					margin: 15px 10px;
+					list-style-type: none;
+
+					.footer-content__link{
+						font-size: 1.1em;
+						color:$HoverWhite;
+						text-decoration: none;
+						font-family: Roboto-regular;
+					}
+
+					.footer-content__link:hover{
+						color:$BasicWhite;
+					}
+				}
+			}
+
+			.footer-content__socials{
+				text-align: center;
+
+				.menu{
+				width: 100%;
+				height: 40px;
+		
+					.menu__items{
+						list-style-type: none;
+
+						.menu__item{
+							display: inline-block;
+							margin: 0px 10px;
+
+							.menu__link{
+								display: block;
+								width: 100%;
+								height: 100%;
+
+								.fa{
+									font-size:26px;
+									text-decoration: none;
+									color:$ThirdWhite;
+								}
+
+								.fa:hover{
+									color:$BasicWhite;
+								}
+							}
+						}
+
+						.menu__item:nth-child(1){
+							padding-left: 5px;
+						}
+
+						.menu__item:nth-child(2){
+							padding-left: 5px;
+							padding-right: 5px;
+						}
+					}
+				}
+			}
+		}
+
+		.footer-content__text-down{
+			text-align: center;
+		
+			.footer-content__quote{
+				padding: 5px 14px 0px 14px;
+
+				.footer-content__text-quote{
+					font-family: Roboto-light;
+					font-size:1em;
+					color: $FooterWhite;
+					font-style: italic;
+				}
+			}
+
+			.footer-content__author{
+				font-family: Roboto-light;
+				font-size:1em;
+				color:$SecondFooterWhite;
+				font-style:italic;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.footer-center{
+		position: relative;
+		margin-top: -2px;
+		width: 100%;
+		height: 120px;
+	}
+
+	.footer-bottom{
+		position: relative;
+		width: 100%;
+		height: 70px;
+		text-align: center;
+		background-color:$BasicGreen;
+		padding-top: 25px;
+
+		.footer-bottom__author{
+			font-family: Roboto-light;
+			font-size:1.1em;
+			color:$HoverWhite;
+		}
+
+	}
+}

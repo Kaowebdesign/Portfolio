@@ -1,0 +1,60 @@
+main.main
+	section#about.about
+		div.about__caption
+			h2.about__text Обо мне
+		article.about__image
+			img(src="../img/about.jpg",alt="Карнаух Андрей").about__image-me
+		article.who
+			div.who__caption
+				h2.who__text Кто я
+			div.who__text-about-me
+				p.who__information Я веб верстальщик из Днепра. Занимаюсь front-end разработкой последние несколько лет. Мне нравится делать современные и интересные проекты.
+				br
+				p.who__information Для верстки своего portfolio я использовал все современные технологии веб-разработки. Это и работа с системой контроля версий git, с пакетным менеджером npm, со сборщиком проектов gulp. А также я использовал препроцессоры pug(jade) и sass и несколько jquery плагинов.
+				br
+				p.who__information  Сейчас, я студент Национального горного университета, изучающий компьютерные науки и информационные технологии.
+				
+	section#skils.skils
+		div.skils__caption
+			h2.skils__text-caption Чем я могу быть <br> вам полезен
+		article.skils__text
+			p.skils__information  Больше всего меня привлекает frontend разработка, но я так же знаком и могу решать не сложные задачи на  Backend. Но давайте все по порядку.
+		h2.skils__all-caption Frontend	
+		div.skils__frontend
+			div.skils__item-frontend
+			div.skils__item-frontend
+			div.skils__item-frontend
+			div.skils__item-frontend
+		h2.skils__all-caption Backend	
+		div.skils__backend
+			div.skils__item-backend
+			div.skils__item-backend
+		h2.skils__all-caption WorkFlow
+		div.skils__workflow
+			div.skils__item-workflow
+			div.skils__item-workflow
+			div.skils__item-workflow
+			div.skils__item-workflow
+		h2.skils__all-caption Other
+		div.skils__other
+			div.skils__item-other
+			div.skils__item-other
+	section#maps.maps
+		div#map.map
+		div.contacts
+			h2.contacts__caption Контакты
+			ul.contacts__list
+				li.contacts__item 
+					i.fa.fa-skype
+					span.contacts__name  Kao_dance
+				li.contacts__item 
+					i.fa.fa-envelope 
+					span.contacts__name assdwqe@gmail.com
+				li.contacts__item 
+					i.fa.fa-phone 
+					span.contacts__name +380(98)-86-61-190
+				li.contacts__item
+					i.fa.fa-map-marker 
+					span.contacts__name  Днепр, пр.Гагарина 57
+script(src="js/components/map.js")
+script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwH4Vdoo_5AnmdMF3ljyXwN4JHlOha1jM&callback=initMap" async defer)

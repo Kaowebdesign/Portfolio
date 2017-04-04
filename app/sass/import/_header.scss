@@ -1,13 +1,24 @@
-$BasicWhite:rgb(255,255,255);
-$SecondWhite:rgba(255,255,255,0.75);
-$ThirdWhite:rgba(255,255,255,0.85);
-$HoverWhite:rgba(255,255,255,0.7);
-header{	
+.header{	
  	height:100vh;
- 	width: 100vw;
+ 	width: 100%;
  	position: relative;
 
- 	section{
+	.loaderArea {
+		width: 100%;
+		height: 100%;
+		background-image:url(../img/forest_preloader.gif);
+		background-repeat:no-repeat;
+		background-size: cover;
+		overflow: hidden;
+		position: fixed;
+		left: 0;
+		top: 0;
+		right:0;
+		bottom:0;
+		z-index: 100000;
+	}
+
+ 	.header__content{
  		position: fixed;
 	 	height: 100vh;
 	 	width: 100%;
@@ -15,113 +26,123 @@ header{
 	 	flex-direction:column;
 	 	justify-content:center;
 	 	align-items:center;
-		background-color: rgb(0,255,0);
-		background-image:url(../img/background.jpg);
+		background-color: rgba(0,255,0,0.4);
+		background-image:url(../img/forest3.jpg);
 		background-repeat:no-repeat;
-		background-size: 250% 100%;
+		background-size: cover;
+		background-position: right;
 
-		nav{
+		.menu{
 			position: absolute;
-			top:4px;
+			top:6px;
 			width: 100%;
 			height: 8vh;
 	
-
-			.menu-items{
+			.menu__items{
 				list-style-type: none;
 
-				.menu-items__item{
+				.menu__item{
 					display: inline-block;
 
-					.menu-items__link{
+					.menu__link{
 						display: block;
 						width: 100%;
 						height: 100%;
 
-						i{
-							font-size:32px;
+						.fa{
+							font-size:30px;
 							text-decoration: none;
-							color:$ThirdWhite;
+							color:$SecondWhite;
+						}
+
+						.fa:hover{
+							color:$BasicWhite;
 						}
 					}
 				}
 
-				.menu-items__item:nth-child(1){
+				.menu__item:nth-child(1){
 					padding-left: 5px;
 				}
 
-				.menu-items__item:nth-child(2){
+				.menu__item:nth-child(2){
 					padding-left: 5px;
 					padding-right: 5px;
 				}
 			}
 		}
 
-		article{
+		.header__photo{
 			height: 140px;
 			width:140px;
-			border-radius: 100px;
-			background-image: url(../img/face.JPG);
-			background-repeat:no-repeat;
-			background-size: 100% 100%;
+			
+				.header_photo-me{
+					height: 100%;
+					width: 100%;
+					border-radius: 100px;
+				}
 			}
 
-		div{
+		.header__title-photo{
 			margin-top: 35px;
 			height:70px;
 			width:100%;
 			text-align: center;
 
-				p:first-child{
-				font-family: Roboto-medium;
+				h1{
+				font-family: Roboto-regular;
 				font-size: 21px;
 				color: $BasicWhite;
 				}
 
-				p:last-child{
+				p{
 					font-family: Roboto-regular;
 					font-size: 14px;
 					color:$SecondWhite;
 				}
 			}
+	}
 
-		.little-arrow{
-			position: absolute;
-			margin:0px;
-			bottom:5vh;
-			width: 100%;
-			height: 10vh;
-			text-align: center;
+	.little-arrow{
+		position: absolute;
+		margin-bottom:10px;
+		bottom:0;
+		width: 100%;
+		height: 40px;
+		text-align: center;
+		z-index: 5;
 			
-			.little-arrow__down{
-				text-decoration: none;
-				bottom:5vh;
-				width: 13vw;
+		.little-arrow__down{
+			text-decoration: none;
 
-				i{
-					font-size: 36px;
-					color:$SecondWhite;
+			.fa{
+				font-size: 36px;
+				color:$HoverWhite;
 				}
+
 			}
 		}
-	}
 
 	.menu-bars{
 		position: fixed;
-		top:4px;
+		top:6px;
 		right: 4px;
-		padding-right: 10px;
+		padding-right: 8px;
 		z-index: 100;
 
-		.menu-bars__item{
+		.menu-bars__items{
 			display: block;
 			width:100%;
 			height:100%;
 			text-align: center;
 
-			i{
-				font-size: 34px;
-				color: $BasicWhite;
+			.fa{
+				font-size: 32px;
+				color:$BasicWhite;
+			}
+
+			.fa:hover{
+
 			}
 		}
 	}
@@ -131,30 +152,39 @@ header{
 	}
 
 	.menu-table{
-		position: absolute;
+		position: fixed;
+		transition:0.7s;
 		width: 100vw;
 		height: 100vh;
 		background-color:$HoverWhite;
 		text-align: center;
 		z-index: 90;
-		display: none;
+		display: flex;
+		flex-direction:row;
+		align-items:center;
+		align-content:center;
 
 		.menu-table__items{
 			position: fixed;
 			list-style-type: none;
-			display: block;
-			margin-top:60%;
+			display: flex;
+			flex-direction:column;
+			align-items:center;
 			width: 100%;
 
 			.menu-table__item{
-				display: block;
+				display: flex;
 				margin: 10px;
 
 				.menu-table__link{
-					p{
-						font-family: Roboto-medium;
-						font-size: 24px;
-					}
+					text-decoration: none;
+					font-family: Roboto-medium;
+					font-size: 24px;
+					color:$BasicBlack;
+				}
+
+				.menu-table__link:hover{
+					color:$BasicGreen;
 				}
 			}
 		}

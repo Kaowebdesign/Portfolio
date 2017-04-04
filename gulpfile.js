@@ -10,12 +10,12 @@ var gulp=require('gulp'),
 	pngquant=require('imagemin-pngquant'),
 	cache=require('gulp-cache'),
 	autoprefixer=require('gulp-autoprefixer'),
-	jade=require('gulp-jade'),
 	plumber=require('gulp-plumber'),
 	svgSprite = require('gulp-svg-sprites'),
 	svgmin = require('gulp-svgmin'),
 	cheerio = require('gulp-cheerio'),
-	replace = require('gulp-replace');
+	replace = require('gulp-replace'),
+	pug=require('gulp-pug');
 
 gulp.task('sass',function(){//Таск для пошуку sass файлів
 	return gulp.src('app/sass/**/*.scss')/*Обираємо всі файли з даним розширенням*/
@@ -26,10 +26,10 @@ gulp.task('sass',function(){//Таск для пошуку sass файлів
 	.pipe(browserSync.reload({stream:true}))
 });
 
-gulp.task('jade',function () {
-	gulp.src('app/jade/**/*.jade')
+gulp.task('pug', function () {
+	gulp.src('app/jade/*.pug')
 	    .pipe(plumber())
-	    .pipe(jade({
+	    .pipe(pug({
       				pretty: true
     	}))
 	    .pipe(gulp.dest('app/'));
@@ -122,9 +122,9 @@ gulp.task('img', function(){
 	.pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('watch',['browser-sync','css-libs','scripts','jade','build'],function(){
+gulp.task('watch',['browser-sync','css-libs','scripts','pug','build'],function(){
 	gulp.watch('app/sass/**/*.scss', ['sass']);
-	gulp.watch('app/jade/**/*.jade', ['jade']);
+	gulp.watch('app/jade/**/*.pug', ['pug']);
 	gulp.watch('app/*.html',browserSync.reload);
 	gulp.watch('app/js/**/*.js',browserSync.reload);
 
