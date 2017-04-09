@@ -1,13 +1,13 @@
 main.main
 	section#about.about
-		div.about__caption.wow.fadeIn
-			h2.about__text Обо мне
+		div.about__caption
+			h2.about__text.wow.fadeIn Обо мне
 		article.about__image
 			img(src="../img/about.jpg",alt="Карнаух Андрей").about__image-me.wow.fadeIn
 		article.who
 			div.who__caption.wow.fadeIn
 				h2.who__text Кто я
-			div.who__text-about-me
+			div.who__text-about-me.wow.fadeIn
 				p.who__information Я веб верстальщик из Днепра. Занимаюсь front-end разработкой последние несколько лет. Мне нравится делать современные и интересные проекты.
 				br
 				p.who__information Для верстки своего portfolio я использовал все современные технологии веб-разработки. Это и работа с системой контроля версий git, с пакетным менеджером npm, со сборщиком проектов gulp. А также я использовал препроцессоры pug(jade) и sass и несколько jquery плагинов.
@@ -15,32 +15,32 @@ main.main
 				p.who__information  Сейчас, я студент Национального горного университета, изучающий компьютерные науки и информационные технологии.
 	section#skils.skils
 		div.skils__caption
-			h2.skils__text-caption Чем я могу быть <br> вам полезен
-		article.skils__text
+			h2.skils__text-caption.wow.fadeIn Чем я могу быть <br> вам полезен
+		article.skils__text.wow.fadeIn
 			p.skils__information  Больше всего меня привлекает frontend разработка, но я так же знаком и могу решать не сложные задачи на  Backend. Но давайте все по порядку.
-		h2.skils__all-caption Frontend	
+		h2.skils__all-caption.wow.fadeIn Frontend	
 		div.skils__frontend
-			div.skils__item-frontend
-			div.skils__item-frontend
-			div.skils__item-frontend
-			div.skils__item-frontend
-		h2.skils__all-caption Backend	
+			div.skils__item-frontend.wow.fadeInRight
+			div(data-wow-delay="0.2s").skils__item-frontend.wow.fadeInRight
+			div(data-wow-delay="0.5s").skils__item-frontend.wow.fadeInRight
+			div(data-wow-delay="0.7s").skils__item-frontend.wow.fadeInRight
+		h2.skils__all-caption.wow.fadeIn Backend	
 		div.skils__backend
-			div.skils__item-backend
-			div.skils__item-backend
-		h2.skils__all-caption WorkFlow
+			div.skils__item-backend.wow.fadeInRight
+			div(data-wow-delay="0.2s").skils__item-backend.wow.fadeInRight
+		h2.skils__all-caption.wow.fadeIn WorkFlow
 		div.skils__workflow
-			div.skils__item-workflow
-			div.skils__item-workflow
-			div.skils__item-workflow
-			div.skils__item-workflow
-		h2.skils__all-caption Other
+			div.skils__item-workflow.wow.fadeInRight
+			div(data-wow-delay="0.2s").skils__item-workflow.wow.fadeInRight
+			div(data-wow-delay="0.5s").skils__item-workflow.wow.fadeInRight
+			div(data-wow-delay="0.6s").skils__item-workflow.wow.fadeInRight
+		h2.skils__all-caption.wow.fadeIn Other
 		div.skils__other
-			div.skils__item-other
-			div.skils__item-other
+			div.skils__item-other.wow.fadeInRight
+			div(data-wow-delay="0.2s").skils__item-other.wow.fadeInRight
 	section#maps.maps
 		div#map.map
-		div.contacts
+		div.contacts.wow.fadeIn
 			h2.contacts__caption Контакты
 			ul.contacts__list
 				li.contacts__item 

@@ -271,6 +271,8 @@
                 border-radius: 20px;
         -webkit-transition: 0.5s;
         transition: 0.5s; }
+    .header .menu-bars_green .menu-bars__items .menu-bars__item {
+      background-color: #87a77b; }
   .header .is_active {
     padding-top: 10px; }
     .header .is_active .menu-bars__items .menu-bars__item {
@@ -409,8 +411,7 @@ body {
       background-image: url(../img/about_header.png);
       background-repeat: no-repeat;
       background-size: 70%;
-      background-position: center;
-      opacity: 0; }
+      background-position: center; }
       .main .about .about__caption .about__text {
         padding-top: 30px;
         font-family: 'Roboto', sans-serif;
@@ -428,16 +429,14 @@ body {
       margin-top: 15px;
       display: block;
       width: 100%;
-      text-align: center;
-      opacity: 0; }
+      text-align: center; }
       .main .about .about__image .about__image-me {
         width: 100%;
         height: 60%; }
     .main .about .who {
       background-color: #ebebeb;
       width: 100%;
-      margin-top: -5px;
-      opacity: 0; }
+      margin-top: -5px; }
       .main .about .who .who__caption {
         width: 100%;
         padding-top: 30px;
@@ -504,8 +503,7 @@ body {
     .main .skils .skils__caption {
       width: 100%;
       padding-top: 30px;
-      text-align: center;
-      opacity: 0; }
+      text-align: center; }
       .main .skils .skils__caption .skils__text-caption {
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
@@ -533,8 +531,7 @@ body {
           -ms-flex-align: center;
               align-items: center;
       text-align: justify;
-      padding-bottom: 20px;
-      opacity: 0; }
+      padding-bottom: 20px; }
       .main .skils .skils__text .skils__information {
         display: -webkit-box;
         display: -webkit-flex;
@@ -550,8 +547,7 @@ body {
       font-family: 'Roboto', sans-serif;
       font-weight: 500;
       font-size: 1.4em;
-      color: #373e42;
-      opacity: 0; }
+      color: #373e42; }
     .main .skils .skils__frontend {
       display: -webkit-box;
       display: -webkit-flex;
@@ -573,8 +569,7 @@ body {
       -webkit-box-align: start;
       -webkit-align-items: flex-start;
           -ms-flex-align: start;
-              align-items: flex-start;
-      opacity: 0; }
+              align-items: flex-start; }
       .main .skils .skils__frontend .skils__item-frontend {
         display: -webkit-box;
         display: -webkit-flex;
@@ -624,8 +619,7 @@ body {
       -webkit-box-align: start;
       -webkit-align-items: flex-start;
           -ms-flex-align: start;
-              align-items: flex-start;
-      opacity: 0; }
+              align-items: flex-start; }
       .main .skils .skils__backend .skils__item-backend {
         display: -webkit-box;
         display: -webkit-flex;
@@ -665,8 +659,7 @@ body {
       -webkit-box-align: start;
       -webkit-align-items: flex-start;
           -ms-flex-align: start;
-              align-items: flex-start;
-      opacity: 0; }
+              align-items: flex-start; }
       .main .skils .skils__workflow .skils__item-workflow {
         display: -webkit-box;
         display: -webkit-flex;
@@ -716,8 +709,7 @@ body {
       -webkit-box-align: start;
       -webkit-align-items: flex-start;
           -ms-flex-align: start;
-              align-items: flex-start;
-      opacity: 0; }
+              align-items: flex-start; }
       .main .skils .skils__other .skils__item-other {
         display: -webkit-box;
         display: -webkit-flex;

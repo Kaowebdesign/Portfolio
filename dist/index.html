@@ -39,9 +39,9 @@
       <section class="header__content">
         <nav class="menu">
           <ul class="menu__items">
-            <li class="menu__item"><a class="menu__link" href="https://vk.com/a.karnauh" target="_blank"><i class="fa fa-vk"></i></a></li>
-            <li class="menu__item"><a class="menu__link" href="https://www.facebook.com/starflesh" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li class="menu__item"><a class="menu__link" href="https://github.com/starflesh" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li class="menu__item"><a class="menu__link" href="https://vk.com/a.karnauh" target="_blank"><i class="fa-vk fa"></i></a></li>
+            <li class="menu__item"><a class="menu__link" href="https://www.facebook.com/starflesh" target="_blank"><i class="fa-facebook fa"></i></a></li>
+            <li class="menu__item"><a class="menu__link" href="https://github.com/starflesh" target="_blank"><i class="fa-github fa"></i></a></li>
           </ul>
         </nav>
         <article class="header__photo"><img class="header_photo-me" src="../img/face.JPG" alt="Карнаух Андрей"></article>
@@ -62,12 +62,12 @@
     </header>
     <main class="main">
       <section class="about" id="about">
-        <div class="about__caption">
+        <div class="about__caption wow fadeIn">
           <h2 class="about__text">Обо мне</h2>
         </div>
-        <article class="about__image"><img class="about__image-me" src="../img/about.jpg" alt="Карнаух Андрей"></article>
+        <article class="about__image"><img class="about__image-me wow fadeIn" src="../img/about.jpg" alt="Карнаух Андрей"></article>
         <article class="who">
-          <div class="who__caption">
+          <div class="who__caption wow fadeIn">
             <h2 class="who__text">Кто я</h2>
           </div>
           <div class="who__text-about-me">
@@ -156,7 +156,8 @@
     <script src="js/components/menu.js"></script>
     <script src="js/components/scrolling.js"></script>
     <script src="js/components/preloader.js"></script>
-    <!--script(src="js/components/Show.js")-->
+    <script src="js/components/Show.js"></script>
     <script src="js/plugins/wow.min.js"></script>
+    <script>new WOW().init()</script>
   </body>
 </html>

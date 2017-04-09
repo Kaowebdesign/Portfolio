@@ -18,50 +18,9 @@
     <script src="js/common.js"></script>
   </head>
   <body> 
-    <header class="header">
-      <section class="loaderArea">
-        <div class="loader">
-          <div class="loader__items">
-            <div class="loader__item"></div>
-            <div class="loader__item"></div>
-            <div class="loader__item"></div>
-            <div class="loader__item"></div>
-            <div class="loader__item"></div>
-            <div class="loader__item"></div>
-            <div class="loader__item"></div>
-            <div class="loader__item"></div>
-          </div>
-          <div class="loader__text"> 
-            <h2>KAO Web Design</h2>
-          </div>
-        </div>
-      </section>
-      <section class="header__content">
-        <nav class="menu">
-          <ul class="menu__items">
-            <li class="menu__item"><a class="menu__link" href="https://vk.com/a.karnauh" target="_blank"><i class="fa-vk fa"></i></a></li>
-            <li class="menu__item"><a class="menu__link" href="https://www.facebook.com/starflesh" target="_blank"><i class="fa-facebook fa"></i></a></li>
-            <li class="menu__item"><a class="menu__link" href="https://github.com/starflesh" target="_blank"><i class="fa-github fa"></i></a></li>
-          </ul>
-        </nav>
-        <article class="header__photo"><img class="header_photo-me" src="../img/face.JPG" alt="Карнаух Андрей"></article>
-        <div class="header__title-photo">
-          <h1>Андрей Карнаух</h1>
-          <p>Личный сайт веб разработчика</p>
-        </div>
-      </section>
-      <div class="little-arrow"><a class="little-arrow__down" href="#about"><i class="fa fa-chevron-down go_to"></i></a></div>
-      <div class="menu-bars" id="main-bars"><a class="menu-bars__items" href="#menu" id="menu-bars">
-          <!--i.fa.fa-bars#fa-menu--><i class="menu-bars__item"></i><i class="menu-bars__item"></i><i class="menu-bars__item"></i></a></div>
-      <div class="menu-table" id="menus">
-        <ul class="menu-table__items">
-          <li class="menu-table__item"><a class="menu-table__link" href="../jobs.html" target="_blank" id="jobs">Мои работы</a></li>
-          <li class="menu-table__item"><a class="menu-table__link" href="#about" id="about-me">Обо мне</a></li>
-        </ul>
-      </div>
-    </header>
+    <!--include includes/_header-->
     <main class="main">
-      <section class="about" id="about"></section>
+      <section class="jobs" id="jobs"></section>
       <section class="eror">
         <div class="loader">
           <div class="loader__items">
@@ -79,40 +38,6 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <section class="footer-content">
-        <div class="footer-content_menus">
-          <ul class="footer-content__menu-list">
-            <li class="footer-content__menu-item"><a class="footer-content__link" href="../jobs.html" target="_blank">Мои работы</a></li>
-            <li class="footer-content__menu-item"><a class="footer-content__link" href="#about">Обо мне</a></li>
-          </ul>
-          <article class="footer-content__socials">
-            <nav class="menu">
-              <ul class="menu__items">
-                <li class="menu__item"><a class="menu__link" href="https://vk.com/a.karnauh" target="_blank"><i class="fa fa-vk"></i></a></li>
-                <li class="menu__item"><a class="menu__link" href="https://www.facebook.com/starflesh" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li class="menu__item"><a class="menu__link" href="https://github.com/starflesh" target="_blank"><i class="fa fa-github"></i></a></li>
-              </ul>
-            </nav>
-          </article>
-        </div>
-        <article class="footer-content__text-down">
-          <blockquote class="footer-content__quote">
-            <p class="footer-content__text-quote">Любой дурак сможет написать код, который поймет машина. Хорошие программисты пишут код, который сможет понять человек.</p>
-          </blockquote>
-          <p class="footer-content__author">- Martin Fowler</p>
-        </article>
-      </section>
-      <section class="footer-center"></section>
-      <section class="footer-bottom">
-        <p class="footer-bottom__author">&copy Андрей Карнаух | 2017</p>
-      </section>
-    </footer>
-    <script src="js/components/menu.js"></script>
-    <script src="js/components/scrolling.js"></script>
-    <script src="js/components/preloader.js"></script>
-    <script src="js/components/Show.js"></script>
-    <script src="js/plugins/wow.min.js"></script>
-    <script>new WOW().init()</script>
+    <!--include includes/_footer-->
   </body>
 </html>
