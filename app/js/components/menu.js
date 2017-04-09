@@ -1,47 +1,31 @@
 $(document).ready(function() {
 	//Переменная для открытия и закрытия меню
 	var flag=false;
+	var background=$('#menus');
+	var hamburgers=$('#main-bars');
+	var menu_items=$('.menu-bars__item');
 	//Окрываем и закрываем меню
 	$('#menu-bars').click(function() {
-		if(flag==false){
-			$('#menus').addClass('menu-table');
-			$('#fa-menu').removeClass('fa-bars');
-			$('#fa-menu').addClass('fa-times');
-			$('#fa-menu').css({
-				'color': '#87a77b'
-			});
-			flag=true;
+
+			//background.toggleClass('menu-table_active');
+			background.fadeToggle('slow');
+			hamburgers.toggleClass('is_active');
+
+	});
+
+	$('.menu-table__link').click(function(event) {
+		background.toggleClass('menu-table_active');
+		hamburgers.toggleClass('is_active');
+		background.fadeToggle('slow');
+	});
+
+	/*Функция смены цвета гамбургер меню, в зависимости от положения*/
+	$(window).scroll(function(){
+		if ( $(document).scrollTop() > 500 ) {
+			hamburgers.addClass('menu-bars_green');
+		}else{
+			hamburgers.removeClass('menu-bars_green');
 		}
-		else if(flag==true){
-			$('#menus').removeClass('menu-table');
-			$('#fa-menu').removeClass('fa-times');
-			$('#fa-menu').addClass('fa-bars');
-			flag=false;
-			$('#fa-menu').css({
-				'color': '#ffffff'
-			});
-		}
 	});
-	//Переходим на вкладку Обо мне и скрываем меню
-	$('#about-me').click(function() {
-		$('#menus').removeClass('menu-table');
-		$('#fa-menu').removeClass('fa-times');
-		$('#fa-menu').addClass('fa-bars');
-		//Меняем цвет нашему Бургер-меню
-		$('#fa-menu').css({
-				'color': '#ffffff'
-			});
-		flag=false;
-	});
-	//Переходим на вкладку Мои работы и скрываем меню
-	$('#jobs').click(function() {
-		$('#menus').removeClass('menu-table');
-		$('#fa-menu').removeClass('fa-times');
-		$('#fa-menu').addClass('fa-bars');
-		//Меняем цвет нашему Бургер-меню
-		$('#fa-menu').css({
-				'color': '#ffffff'
-			});
-		flag=false;
-	});
+	$(window).scroll();
 });

@@ -39,9 +39,9 @@
       <section class="header__content">
         <nav class="menu">
           <ul class="menu__items">
-            <li class="menu__item"><a class="menu__link" href="https://vk.com/a.karnauh" target="_blank"><i class="fa fa-vk"></i></a></li>
-            <li class="menu__item"><a class="menu__link" href="https://www.facebook.com/starflesh" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li class="menu__item"><a class="menu__link" href="https://github.com/starflesh" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li class="menu__item"><a class="menu__link" href="https://vk.com/a.karnauh" target="_blank"><i class="fa-vk fa"></i></a></li>
+            <li class="menu__item"><a class="menu__link" href="https://www.facebook.com/starflesh" target="_blank"><i class="fa-facebook fa"></i></a></li>
+            <li class="menu__item"><a class="menu__link" href="https://github.com/starflesh" target="_blank"><i class="fa-github fa"></i></a></li>
           </ul>
         </nav>
         <article class="header__photo"><img class="header_photo-me" src="../img/face.JPG" alt="Карнаух Андрей"></article>
@@ -61,69 +61,24 @@
       </div>
     </header>
     <main class="main">
-      <section class="about" id="about">
-        <div class="about__caption">
-          <h2 class="about__text">Обо мне</h2>
-        </div>
-        <article class="about__image"><img class="about__image-me" src="../img/about.jpg" alt="Карнаух Андрей"></article>
-        <article class="who">
-          <div class="who__caption">
-            <h2 class="who__text">Кто я</h2>
+      <section class="about" id="about"></section>
+      <section class="eror">
+        <div class="loader">
+          <div class="loader__items">
+            <div class="loader__item"></div>
+            <div class="loader__item"></div>
+            <div class="loader__item"></div>
+            <div class="loader__item"></div>
           </div>
-          <div class="who__text-about-me">
-            <p class="who__information">Я веб верстальщик из Днепра. Занимаюсь front-end разработкой последние несколько лет. Мне нравится делать современные и интересные проекты.</p><br>
-            <p class="who__information">Для верстки своего portfolio я использовал все современные технологии веб-разработки. Это и работа с системой контроля версий git, с пакетным менеджером npm, со сборщиком проектов gulp. А также я использовал препроцессоры pug(jade) и sass и несколько jquery плагинов.</p><br>
-            <p class="who__information"> Сейчас, я студент Национального горного университета, изучающий компьютерные науки и информационные технологии.</p>
+          <div class="loader__text"> 
+            <h2>KAO Web Design</h2>
           </div>
-        </article>
-      </section>
-      <section class="skils" id="skils">
-        <div class="skils__caption">
-          <h2 class="skils__text-caption">Чем я могу быть <br> вам полезен</h2>
         </div>
-        <article class="skils__text">
-          <p class="skils__information"> Больше всего меня привлекает frontend разработка, но я так же знаком и могу решать не сложные задачи на  Backend. Но давайте все по порядку.</p>
-        </article>
-        <h2 class="skils__all-caption">Frontend	</h2>
-        <div class="skils__frontend">
-          <div class="skils__item-frontend"></div>
-          <div class="skils__item-frontend"></div>
-          <div class="skils__item-frontend"></div>
-          <div class="skils__item-frontend"></div>
-        </div>
-        <h2 class="skils__all-caption">Backend	</h2>
-        <div class="skils__backend">
-          <div class="skils__item-backend"></div>
-          <div class="skils__item-backend"></div>
-        </div>
-        <h2 class="skils__all-caption">WorkFlow</h2>
-        <div class="skils__workflow">
-          <div class="skils__item-workflow"></div>
-          <div class="skils__item-workflow"></div>
-          <div class="skils__item-workflow"></div>
-          <div class="skils__item-workflow"></div>
-        </div>
-        <h2 class="skils__all-caption">Other</h2>
-        <div class="skils__other">
-          <div class="skils__item-other"></div>
-          <div class="skils__item-other"></div>
-        </div>
-      </section>
-      <section class="maps" id="maps">
-        <div class="map" id="map"></div>
-        <div class="contacts">
-          <h2 class="contacts__caption">Контакты</h2>
-          <ul class="contacts__list">
-            <li class="contacts__item"> <i class="fa fa-skype"></i><span class="contacts__name"> Kao_dance</span></li>
-            <li class="contacts__item"> <i class="fa fa-envelope"> </i><span class="contacts__name">assdwqe@gmail.com</span></li>
-            <li class="contacts__item"> <i class="fa fa-phone"> </i><span class="contacts__name">+380(98)-86-61-190</span></li>
-            <li class="contacts__item"><i class="fa fa-map-marker"> </i><span class="contacts__name"> Днепр, пр.Гагарина 57</span></li>
-          </ul>
+        <div class="eror__information">
+          <p class="eror__text">Упс, данная страница находится в стадии разработки. Совсем скоро все будет готово, а пока жмите</p><a class="eror__link" href="../index.html">вернуться на главную</a>
         </div>
       </section>
     </main>
-    <script src="js/components/map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwH4Vdoo_5AnmdMF3ljyXwN4JHlOha1jM&amp;callback=initMap" async defer></script>
     <footer class="footer">
       <section class="footer-content">
         <div class="footer-content_menus">
@@ -156,7 +111,8 @@
     <script src="js/components/menu.js"></script>
     <script src="js/components/scrolling.js"></script>
     <script src="js/components/preloader.js"></script>
-    <!--script(src="js/components/Show.js")-->
+    <script src="js/components/Show.js"></script>
     <script src="js/plugins/wow.min.js"></script>
+    <script>new WOW().init()</script>
   </body>
 </html>

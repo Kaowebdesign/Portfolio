@@ -25,7 +25,8 @@
 						font-size: 1.1em;
 						color:$HoverWhite;
 						text-decoration: none;
-						font-family: Roboto-regular;
+						font-family: 'Roboto', sans-serif;
+						font-weight: 400;
 					}
 
 					.footer-content__link:hover{
@@ -85,7 +86,8 @@
 				padding: 5px 14px 0px 14px;
 
 				.footer-content__text-quote{
-					font-family: Roboto-light;
+					font-family: 'Roboto', sans-serif;
+					font-weight: 300;
 					font-size:1em;
 					color: $FooterWhite;
 					font-style: italic;
@@ -93,7 +95,8 @@
 			}
 
 			.footer-content__author{
-				font-family: Roboto-light;
+				font-family: 'Roboto', sans-serif;
+				font-weight: 300;
 				font-size:1em;
 				color:$SecondFooterWhite;
 				font-style:italic;
@@ -118,7 +121,8 @@
 		padding-top: 25px;
 
 		.footer-bottom__author{
-			font-family: Roboto-light;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 300;
 			font-size:1.1em;
 			color:$HoverWhite;
 		}

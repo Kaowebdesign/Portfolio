@@ -1,18 +1,19 @@
 header.header
 	section.loaderArea
-		div.loader
+		.loader
+			.loader__items
+				-for(i=8;i;i--)
+					.loader__item
+			.loader__text 
+				h2 KAO Web Design
 	section.header__content
 		nav.menu
 			ul.menu__items
-				li.menu__item
-					a(href="https://vk.com/a.karnauh" target="_blank").menu__link
-						i.fa.fa-vk
-				li.menu__item
-					a(href="https://www.facebook.com/starflesh" target="_blank").menu__link
-						i.fa.fa-facebook
-				li.menu__item
-					a(href="https://github.com/starflesh" target="_blank").menu__link
-						i.fa.fa-github
+				-var socials = {'vk.com/a.karnauh': 'fa-vk', 'www.facebook.com/starflesh': 'fa-facebook','github.com/starflesh': 'fa-github'};
+				each icon,href in socials
+					li.menu__item
+						a(href=`https://${href}` target="_blank").menu__link
+							i(class=icon).fa
 		article.header__photo
 			img(src="../img/face.JPG",alt="Карнаух Андрей").header_photo-me
 		div.header__title-photo
@@ -21,12 +22,15 @@ header.header
 	div.little-arrow
 		a(href="#about").little-arrow__down
 			i.fa.fa-chevron-down.go_to
-	div.menu-bars
+	div.menu-bars#main-bars
 		a(href="#menu")#menu-bars.menu-bars__items
-			i.fa.fa-bars#fa-menu
-	div#menus
+			//i.fa.fa-bars#fa-menu
+			i.menu-bars__item
+			i.menu-bars__item
+			i.menu-bars__item
+	div#menus.menu-table
 		ul.menu-table__items
 			li.menu-table__item
-				a(href="#" target="_blank")#jobs.menu-table__link Мои работы
+				a(href="../jobs.html" target="_blank")#jobs.menu-table__link Мои работы
 			li.menu-table__item
 				a(href="#about")#about-me.menu-table__link Обо мне

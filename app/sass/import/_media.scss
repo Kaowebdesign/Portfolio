@@ -215,13 +215,26 @@
 
 }
 
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1200px) {
 	.header{
 
 		.header__content{
 			background-size:100% 100%;
 			/*background-position: bottom;*/
 			transition:0.5s;
+		}
+
+		.menu-table{
+		
+			.menu-table__items{
+
+				.menu-table__item{
+
+					.menu-table__link{
+						font-size: 28px;
+					}
+				}
+			}
 		}
 	}
 

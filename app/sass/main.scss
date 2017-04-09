@@ -6,16 +6,12 @@ border:0px;
 box-sizing:border-box;
 }
 @font-face {
-   font-family: Roboto-medium; /* Гарнитура шрифта */
-   src: url(../fonts/Roboto-Medium.ttf); /* Путь к файлу со шрифтом */
+   font-family: CaviarDreams; /* Гарнитура шрифта */
+   src: url(../fonts/CaviarDreams.ttf); /* Путь к файлу со шрифтом */
 }
 @font-face {
-   font-family: Roboto-regular; /* Гарнитура шрифта */
-   src: url(../fonts/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
-}
-@font-face {
-   font-family: Roboto-Light; /* Гарнитура шрифта */
-   src: url(../fonts/Roboto-Light.ttf); /* Путь к файлу со шрифтом */
+   font-family: CaviarDreamsBold; /* Гарнитура шрифта */
+   src: url(../fonts/CaviarDreams_Bold.ttf); /* Путь к файлу со шрифтом */
 }
 @import "import/vars";
 @import "import/header";

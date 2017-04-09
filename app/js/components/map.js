@@ -65,5 +65,4 @@ function toggleBounce() {
 styledMap = new google.maps.StyledMapType(stylesArray,{name: "Styled Map"});
 map.mapTypes.set('map_style', styledMap);
 map.setMapTypeId('map_style');
-
 }
