@@ -499,7 +499,8 @@ body {
     background-color: white;
     width: 100%;
     margin-top: -1px;
-    text-align: center; }
+    text-align: center;
+    overflow: hidden; }
     .main .skils .skils__caption {
       width: 100%;
       padding-top: 30px;
